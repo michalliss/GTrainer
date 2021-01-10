@@ -1,0 +1,18 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/Row"
+        android:text="E"
+        android:background="@drawable/text_round_bg_red"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:textSize="40dp" >
+    </TextView>
+</LinearLayout>

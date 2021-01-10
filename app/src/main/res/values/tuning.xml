@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="Sv1">64</integer>
+    <integer name="Sv2">59</integer>
+    <integer name="Sv3">55</integer>
+    <integer name="Sv4">50</integer>
+    <integer name="Sv5">45</integer>
+    <integer name="Sv6">40</integer>
+</resources>

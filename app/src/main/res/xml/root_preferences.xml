@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Pitch detection">
+
+        <ListPreference
+            app:defaultValue="FFT_YIN"
+            app:entries="@array/algorithm_entries"
+            app:entryValues="@array/algorithm_values"
+            app:key="algorithm"
+            app:title="Pitch detection algorithm"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            app:key="sensitivity"
+            app:title="Pich detection sensitivity"
+            app:summary="Set sensitivity"
+            android:max="100"
+            app:defaultValue="80" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

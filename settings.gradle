@@ -1,0 +1,3 @@
+include ':TarsosDSP-Android-latest-bin'
+include ':app'
+rootProject.name = "guitarFinal"
