@@ -39,8 +39,22 @@ public class StatisticsActivity extends AppCompatActivity {
             int noteVal = sharedPref.getInt("stat_" + note, 0);
             noteStats.put(note, noteVal);
         }
-        String keyMax = Collections.max(noteStats.entrySet(), Map.Entry.comparingByValue()).getKey();
-        String keyMin = Collections.min(noteStats.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String keyMax = null; //= Collections.max(noteStats.entrySet(), Map.Entry.comparingByValue()).getKey();
+        String keyMin = null; //= Collections.min(noteStats.entrySet(), Map.Entry.comparingByValue()).getKey();
+
+        int valMax = Collections.max(noteStats.values());
+        for (Map.Entry<String, Integer> entry : noteStats.entrySet()) {
+            if (entry.getValue()==valMax) {
+                keyMax = entry.getKey();
+            }
+        }
+
+        int valMin = Collections.min(noteStats.values());
+        for (Map.Entry<String, Integer> entry : noteStats.entrySet()) {
+            if (entry.getValue()==valMin) {
+                keyMin = entry.getKey();
+            }
+        }
 
         statLeastNote.setText(keyMin);
         statMostNote.setText(keyMax);
